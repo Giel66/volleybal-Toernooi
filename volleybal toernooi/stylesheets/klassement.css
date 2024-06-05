@@ -1,3 +1,4 @@
+
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -21,9 +22,12 @@ th {
 }
 h2 {
     margin-top: 20px;
+
 }
+
 @media (max-width: 768px) {
     .poule {
         width: 100%;
     }
 }
+

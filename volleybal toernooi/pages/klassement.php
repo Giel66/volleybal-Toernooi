@@ -81,24 +81,21 @@ function toonPoule($pouleNaam, $teams) {
 <head>
     <meta charset="UTF-8">
     <title>Klassement</title>
-
+    <link rel="stylesheet" href="stylesheets/klassement.css">
 </head>
 <body>
-<link rel="stylesheet" href="stylesheets/klassement.css">
     <h1>Klassement Volleybal</h1>
-    <div class="container">
-        <?php
-       
-        $pouleNames = array_keys($poules);
-        for ($i = 0; $i < count($pouleNames); $i += 2) {
-            echo "<div class='container'>";
-            toonPoule($pouleNames[$i], $poules[$pouleNames[$i]]);
-            if ($i + 1 < count($pouleNames)) {
-                toonPoule($pouleNames[$i + 1], $poules[$pouleNames[$i + 1]]);
-            }
-            echo "</div>";
+    <?php
+    // Toon alle poules in paren
+    $pouleNames = array_keys($poules);
+    for ($i = 0; $i < count($pouleNames); $i += 2) {
+        echo "<div class='container'>";
+        toonPoule($pouleNames[$i], $poules[$pouleNames[$i]]);
+        if ($i + 1 < count($pouleNames)) {
+            toonPoule($pouleNames[$i + 1], $poules[$pouleNames[$i + 1]]);
         }
-        ?>
-    </div>
+        echo "</div>";
+    }
+    ?>
 </body>
 </html>

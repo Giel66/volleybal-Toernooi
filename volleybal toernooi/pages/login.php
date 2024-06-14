@@ -11,11 +11,11 @@
             <form>
                     
                 <div class="input-group">
-                    <label for="username">Username</label>
+                    <label for="username">Gebruikersnaam</label>
                     <input type="text" id="username" name="username" required>
                 </div>
                 <div class="input-group">
-                    <label for="password">Password</label>
+                    <label for="password">Wachtwoord</label>
                     <input type="password" id="password" name="password" required>
                 </div>
                 <button type="submit">Login</button>

@@ -36,11 +36,11 @@
                 require('pages/teams.php');
                 break;
 
-            case 6:
-                require('pages/veldIndeling.php');
+            case 6: 
+                require('pages/inschrijven.php');
                 break;
 
-            case 7: 
+            case 7:
                 require('pages/login.php');
                 break;
 

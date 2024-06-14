@@ -1,1 +1,53 @@
 
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply styles to the whole page */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Style the table */
+table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%; /* Reduce the width */
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/* Style table header */
+th {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Style table data cells */
+td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Style the heading */
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 600px) {
+    table {
+        font-size: 14px;
+    }
+    th, td {
+        padding: 6px;
+    }
+}
+
